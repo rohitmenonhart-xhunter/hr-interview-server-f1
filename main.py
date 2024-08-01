@@ -66,6 +66,7 @@ def generate_follow_up():
 
     prompt = (
         "Based on the following response from the candidate to a specific question, generate one or two "
+        "dont talk about games and comedies"
         "creative follow-up questions to explore the candidate's experience or skills further.\n\n"
         "Question: {question}\nCandidate's Response: {response}\nResume:\n{resume_text}\n\nFollow-Up Questions:"
     ).format(question=data['question'], response=data['response'], resume_text=data['resume_text'])
